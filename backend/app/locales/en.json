@@ -1,0 +1,268 @@
+{
+  "common": {
+    "success": "Request completed successfully.",
+    "created": "Created successfully.",
+    "bad_request": "The request could not be processed.",
+    "unauthorized": "Authentication is required.",
+    "forbidden": "You do not have permission to perform this action.",
+    "not_found": "The requested resource was not found.",
+    "method_not_allowed": "This HTTP method is not allowed for this endpoint.",
+    "conflict": "The request conflicts with the current state of the resource.",
+    "too_many_requests": "Too many requests. Please try again later.",
+    "validation_failed": "The submitted data is invalid.",
+    "internal_error": "An unexpected error occurred. Please try again later.",
+    "error": "An error occurred.",
+    "healthy": "Iron Gate API is up and running."
+  },
+  "auth": {
+    "login_success": "Signed in successfully.",
+    "invalid_credentials": "Incorrect email or password.",
+    "inactive_user": "This account is inactive or no longer exists.",
+    "token_invalid": "The access token is invalid.",
+    "token_expired": "The access token has expired. Please sign in again.",
+    "email_taken": "An account with this email already exists.",
+    "weak_password": "Password must contain at least one letter and one digit.",
+    "firm_registered": "Your security firm has been registered and is pending platform approval.",
+    "facility_registered": "Your facility has been registered successfully.",
+    "user_created": "User account created successfully.",
+    "role_not_assignable": "You are not allowed to create users with this role.",
+    "role_not_configured": "System roles are not configured. Please run the seed script.",
+    "guard_link_invalid": "The guard profile cannot be linked to this account."
+  },
+  "lookup": {
+    "city_not_found": "One or more of the selected cities do not exist.",
+    "sector_not_found": "The selected sector does not exist."
+  },
+  "firm": {
+    "not_found": "Security firm not found.",
+    "not_linked": "Your account is not linked to a security firm.",
+    "not_approved": "Your security firm has not been approved by the platform yet.",
+    "license_taken": "A firm with this MOI license number is already registered.",
+    "cr_taken": "A firm with this commercial registration number is already registered.",
+    "license_expired": "The MOI license expiry date must be in the future.",
+    "license_expires_before_contract": "Your MOI license expires before the end of the requested service period.",
+    "approved": "The security firm has been approved.",
+    "rejected": "The security firm has been rejected.",
+    "invalid_status_transition": "This action is not allowed for the firm's current status."
+  },
+  "facility": {
+    "not_linked": "Your account is not linked to a facility."
+  },
+  "request": {
+    "created": "Guard request created and opened for bidding.",
+    "not_found": "Guard request not found.",
+    "not_open": "This request is no longer open for bidding.",
+    "bidding_closed": "The bidding deadline for this request has passed.",
+    "invalid_dates": "The end date must be on or after the start date.",
+    "start_in_past": "The start date cannot be in the past.",
+    "deadline_after_start": "The bidding deadline must be before the service start date."
+  },
+  "bid": {
+    "submitted": "Your bid has been submitted.",
+    "not_found": "Bid not found.",
+    "already_exists": "Your firm has already submitted a bid for this request.",
+    "insufficient_capacity": "Your firm does not have enough available verified guards in this city ({available} available, {required} required).",
+    "not_submitted": "Only submitted bids can be processed.",
+    "withdrawn": "Your bid has been withdrawn.",
+    "accepted": "Bid awarded. The contract has been sent to the security firm for signature."
+  },
+  "contract": {
+    "not_found": "Contract not found.",
+    "invalid_state": "This action is not allowed in the contract's current state.",
+    "signed": "Contract signed. Awaiting facility approval.",
+    "approved": "Contract approved and activated.",
+    "imported": "Contract imported. {firm} has been asked to confirm it — tracking starts as soon as they do.",
+    "import_confirmed": "Imported contract confirmed. Live tracking is now active.",
+    "import_ended": "This contract has already ended; only running contracts can be imported.",
+    "provider_unavailable": "The selected security firm is not available on Iron Gate."
+  },
+  "guard": {
+    "created": "Guard added to your roster.",
+    "not_found": "Guard not found.",
+    "national_id_taken": "A guard with this national ID is already registered."
+  },
+  "shamoos": {
+    "invalid_national_id": "National ID / Iqama number must be 10 digits and start with 1 or 2.",
+    "verification_complete": "Shamoos verification completed: {status}.",
+    "service_unavailable": "The Shamoos verification service is currently unavailable. Please try again later."
+  },
+  "admin": {
+    "sla_run_complete": "SLA penalty check completed. {count} penalties created."
+  },
+  "validation": {
+    "missing": "{field} is required.",
+    "string_too_short": "{field} must be at least {min_length} characters.",
+    "string_too_long": "{field} must be at most {max_length} characters.",
+    "string_type": "{field} must be text.",
+    "string_pattern_mismatch": "{field} has an invalid format.",
+    "greater_than": "{field} must be greater than {gt}.",
+    "greater_than_equal": "{field} must be greater than or equal to {ge}.",
+    "less_than": "{field} must be less than {lt}.",
+    "less_than_equal": "{field} must be less than or equal to {le}.",
+    "int_parsing": "{field} must be a whole number.",
+    "int_type": "{field} must be a whole number.",
+    "int_from_float": "{field} must be a whole number.",
+    "float_parsing": "{field} must be a number.",
+    "float_type": "{field} must be a number.",
+    "decimal_parsing": "{field} must be a decimal number.",
+    "decimal_type": "{field} must be a decimal number.",
+    "decimal_max_digits": "{field} must have at most {max_digits} digits.",
+    "decimal_max_places": "{field} must have at most {decimal_places} decimal places.",
+    "bool_parsing": "{field} must be true or false.",
+    "bool_type": "{field} must be true or false.",
+    "value_error": "{field} is invalid.",
+    "enum": "{field} must be one of: {expected}.",
+    "literal_error": "{field} must be one of: {expected}.",
+    "date_parsing": "{field} must be a valid date (YYYY-MM-DD).",
+    "date_type": "{field} must be a valid date (YYYY-MM-DD).",
+    "date_from_datetime_parsing": "{field} must be a valid date (YYYY-MM-DD).",
+    "datetime_parsing": "{field} must be a valid date and time.",
+    "datetime_type": "{field} must be a valid date and time.",
+    "datetime_from_date_parsing": "{field} must be a valid date and time.",
+    "json_invalid": "The request body is not valid JSON.",
+    "dict_type": "{field} must be an object.",
+    "model_type": "{field} must be an object.",
+    "model_attributes_type": "{field} must be an object.",
+    "list_type": "{field} must be a list.",
+    "too_short": "{field} must contain at least {min_length} item(s).",
+    "too_long": "{field} must contain at most {max_length} item(s).",
+    "extra_forbidden": "{field} is not allowed.",
+    "default": "{field} is invalid."
+  },
+  "fields": {
+    "_self": "Value",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "full_name": "Full name",
+    "full_name_ar": "Arabic full name",
+    "phone": "Phone number",
+    "preferred_locale": "Preferred language",
+    "role": "Role",
+    "name": "Name",
+    "name_ar": "Arabic name",
+    "firm": "Firm details",
+    "facility": "Facility details",
+    "moi_license_number": "MOI license number",
+    "license_expiry_date": "License expiry date",
+    "commercial_registration": "Commercial registration",
+    "headquarters_city_id": "Headquarters city",
+    "operating_city_ids": "Operating cities",
+    "contact_email": "Contact email",
+    "contact_phone": "Contact phone",
+    "sector_id": "Sector",
+    "city_id": "City",
+    "address": "Address",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "geofence_radius_m": "Geofence radius",
+    "national_id": "National ID",
+    "date_of_birth": "Date of birth",
+    "guard_id": "Guard",
+    "title": "Title",
+    "description": "Description",
+    "guard_count": "Number of guards",
+    "start_date": "Start date",
+    "end_date": "End date",
+    "daily_hours": "Daily hours",
+    "bidding_deadline": "Bidding deadline",
+    "budget_per_guard": "Budget per guard",
+    "price_per_guard": "Price per guard",
+    "notes": "Notes",
+    "reason": "Reason",
+    "sla_breach_threshold_minutes": "Breach threshold (minutes)",
+    "sla_penalty_per_breach": "Penalty per breach",
+    "sla_max_penalty_percent": "Maximum penalty percentage",
+    "limit": "Limit",
+    "offset": "Offset",
+    "status": "Status",
+    "firm_id": "Security firm",
+    "external_reference": "Contract reference",
+    "contract_value": "Contract value"
+  },
+  "enums": {
+    "firm_status": {
+      "pending": "Pending Approval",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "suspended": "Suspended"
+    },
+    "shamoos_status": {
+      "pending": "Pending",
+      "verified": "Verified",
+      "rejected": "Rejected"
+    },
+    "employment_status": {
+      "active": "Active",
+      "on_leave": "On Leave",
+      "terminated": "Terminated"
+    },
+    "bid_status": {
+      "submitted": "Submitted",
+      "accepted": "Awarded",
+      "rejected": "Not selected",
+      "withdrawn": "Withdrawn"
+    },
+    "contract_status": {
+      "pending_firm_signature": "Pending Firm Signature",
+      "pending_facility_approval": "Pending Facility Approval",
+      "active": "Active",
+      "completed": "Completed",
+      "terminated": "Terminated"
+    },
+    "shift_status": {
+      "scheduled": "Scheduled",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "missed": "No-show",
+      "cancelled": "Cancelled"
+    },
+    "incident_severity": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "incident_status": {
+      "open": "Open",
+      "under_review": "Under Review",
+      "resolved": "Resolved"
+    },
+    "invoice_status": {
+      "draft": "Draft",
+      "issued": "Issued",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    },
+    "penalty_status": {
+      "pending": "Pending",
+      "applied": "Applied",
+      "waived": "Waived"
+    },
+    "service_health": {
+      "healthy": "Healthy",
+      "degraded": "Degraded",
+      "down": "Down",
+      "idle": "No Recent Traffic"
+    },
+    "shamoos_result": {
+      "verified": "Verified",
+      "rejected": "Rejected",
+      "error": "Connection error"
+    }
+  },
+  "shift": {
+    "not_found": "Shift not found.",
+    "no_guard_profile": "Your account is not linked to a security guard profile.",
+    "invalid_state": "This action is not allowed in the shift's current state.",
+    "too_early": "It is too early to clock in. Clock-in opens {minutes} minutes before the shift starts.",
+    "ended": "This shift has already ended.",
+    "outside_geofence": "You are outside the site geofence ({distance} m from the facility; the limit is {radius} m). You must be on site to clock in.",
+    "clocked_in": "Clocked in. Have a safe shift.",
+    "clocked_out": "Clocked out. Thank you.",
+    "location_ok": "Location updated — you are inside the site geofence.",
+    "breach_started": "Warning: you are outside the site geofence. The site supervisor has been notified.",
+    "still_outside": "You are still outside the site geofence."
+  }
+}

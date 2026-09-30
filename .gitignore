@@ -1,0 +1,33 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+
+# ── Secrets & local config (commit .env.example, never .env) ──
+.env
+.env.*
+!.env.example
+
+# ── Local databases ──
+*.sqlite
+*.sqlite3
+*.db
+
+# ── OS / editor noise ──
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+*.swp
+*.log

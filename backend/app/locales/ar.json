@@ -1,0 +1,268 @@
+{
+  "common": {
+    "success": "تمت العملية بنجاح.",
+    "created": "تم الإنشاء بنجاح.",
+    "bad_request": "تعذّرت معالجة الطلب.",
+    "unauthorized": "يلزم تسجيل الدخول للمتابعة.",
+    "forbidden": "لا تملك الصلاحية اللازمة لتنفيذ هذا الإجراء.",
+    "not_found": "البيانات المطلوبة غير موجودة.",
+    "method_not_allowed": "طريقة الطلب غير مسموح بها لهذا المسار.",
+    "conflict": "يتعارض الطلب مع الحالة الحالية للبيانات.",
+    "too_many_requests": "تجاوزت الحد المسموح من الطلبات. يرجى المحاولة لاحقاً.",
+    "validation_failed": "البيانات المُدخلة غير صحيحة.",
+    "internal_error": "حدث خطأ غير متوقع. يرجى المحاولة لاحقاً.",
+    "error": "حدث خطأ.",
+    "healthy": "منصة Iron Gate تعمل بكفاءة."
+  },
+  "auth": {
+    "login_success": "تم تسجيل الدخول بنجاح.",
+    "invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    "inactive_user": "الحساب غير مفعّل أو لم يعد موجوداً.",
+    "token_invalid": "رمز الدخول غير صالح.",
+    "token_expired": "انتهت صلاحية الجلسة. يرجى تسجيل الدخول مجدداً.",
+    "email_taken": "البريد الإلكتروني مسجّل مسبقاً.",
+    "weak_password": "يجب أن تحتوي كلمة المرور على حرف ورقم على الأقل.",
+    "firm_registered": "تم تسجيل شركة الحراسات الأمنية بنجاح، وطلب الاعتماد قيد المراجعة لدى إدارة المنصة.",
+    "facility_registered": "تم تسجيل المنشأة بنجاح.",
+    "user_created": "تم إنشاء حساب المستخدم بنجاح.",
+    "role_not_assignable": "لا تملك صلاحية إنشاء مستخدمين بهذا الدور.",
+    "role_not_configured": "أدوار النظام غير مهيأة. يرجى تشغيل أمر تهيئة البيانات الأساسية.",
+    "guard_link_invalid": "تعذّر ربط ملف حارس الأمن بهذا الحساب."
+  },
+  "lookup": {
+    "city_not_found": "مدينة أو أكثر من المدن المختارة غير موجودة.",
+    "sector_not_found": "القطاع المختار غير موجود."
+  },
+  "firm": {
+    "not_found": "شركة الحراسات الأمنية غير موجودة.",
+    "not_linked": "حسابك غير مرتبط بشركة حراسات أمنية.",
+    "not_approved": "لم تعتمد إدارة المنصة شركتكم بعد.",
+    "license_taken": "رقم ترخيص وزارة الداخلية مسجّل مسبقاً لشركة أخرى.",
+    "cr_taken": "رقم السجل التجاري مسجّل مسبقاً لشركة أخرى.",
+    "license_expired": "يجب أن يكون تاريخ انتهاء ترخيص وزارة الداخلية لاحقاً لتاريخ اليوم.",
+    "license_expires_before_contract": "ينتهي ترخيص وزارة الداخلية لشركتكم قبل نهاية مدة الخدمة المطلوبة.",
+    "approved": "تم اعتماد شركة الحراسات الأمنية.",
+    "rejected": "تم رفض طلب اعتماد شركة الحراسات الأمنية.",
+    "invalid_status_transition": "لا يمكن تنفيذ هذا الإجراء في حالة الشركة الحالية."
+  },
+  "facility": {
+    "not_linked": "حسابك غير مرتبط بمنشأة."
+  },
+  "request": {
+    "created": "تم إنشاء طلب الحراسة وطرحه لاستقبال عروض الأسعار.",
+    "not_found": "طلب الحراسة غير موجود.",
+    "not_open": "انتهت فترة استقبال عروض الأسعار لهذا الطلب.",
+    "bidding_closed": "انتهى الموعد النهائي لتقديم عروض الأسعار على هذا الطلب.",
+    "invalid_dates": "يجب ألا يسبق تاريخ الانتهاء تاريخ البدء.",
+    "start_in_past": "لا يمكن أن يكون تاريخ بدء الخدمة في الماضي.",
+    "deadline_after_start": "يجب أن يسبق الموعد النهائي لتقديم عروض الأسعار تاريخ بدء الخدمة."
+  },
+  "bid": {
+    "submitted": "تم تقديم عرض السعر بنجاح.",
+    "not_found": "عرض السعر غير موجود.",
+    "already_exists": "سبق أن قدّمت شركتكم عرض سعر على هذا الطلب.",
+    "insufficient_capacity": "لا يتوفر لدى شركتكم عدد كافٍ من حراس الأمن الموثّقين في هذه المدينة (المتاح: {available}، المطلوب: {required}).",
+    "not_submitted": "لا يمكن اتخاذ إجراء إلا على عروض الأسعار المقدَّمة.",
+    "withdrawn": "تم سحب عرض السعر.",
+    "accepted": "تمت الترسية على عرض السعر، وأُرسل العقد إلى شركة الحراسات الأمنية للتوقيع."
+  },
+  "contract": {
+    "not_found": "العقد غير موجود.",
+    "invalid_state": "لا يمكن تنفيذ هذا الإجراء في حالة العقد الحالية.",
+    "signed": "تم توقيع العقد من شركة الحراسات الأمنية، وهو بانتظار اعتماد المنشأة.",
+    "approved": "تم اعتماد العقد وأصبح سارياً.",
+    "imported": "تم استيراد العقد، وأُرسل إلى {firm} لتأكيده — يبدأ التتبع فور التأكيد.",
+    "import_confirmed": "تم تأكيد العقد المستورد، وأصبح التتبع الميداني فعّالاً.",
+    "import_ended": "انتهت مدة هذا العقد؛ يمكن استيراد العقود السارية فقط.",
+    "provider_unavailable": "شركة الحراسات المختارة غير متاحة على منصة Iron Gate."
+  },
+  "guard": {
+    "created": "تمت إضافة حارس الأمن إلى قائمة الحراس.",
+    "not_found": "حارس الأمن غير موجود.",
+    "national_id_taken": "رقم الهوية مسجّل مسبقاً لحارس أمن آخر."
+  },
+  "shamoos": {
+    "invalid_national_id": "يجب أن يتكون رقم الهوية الوطنية أو الإقامة من 10 أرقام ويبدأ بالرقم 1 أو 2.",
+    "verification_complete": "اكتمل التحقق الأمني عبر نظام شموس: {status}.",
+    "service_unavailable": "خدمة التحقق عبر نظام شموس غير متاحة حالياً. يرجى المحاولة لاحقاً."
+  },
+  "shift": {
+    "not_found": "الوردية غير موجودة.",
+    "no_guard_profile": "حسابك غير مرتبط بملف حارس أمن.",
+    "invalid_state": "لا يمكن تنفيذ هذا الإجراء في حالة الوردية الحالية.",
+    "too_early": "لم يحن وقت تسجيل الحضور بعد؛ يُتاح التسجيل قبل بدء الوردية بـ {minutes} دقيقة.",
+    "ended": "انتهى وقت هذه الوردية.",
+    "outside_geofence": "أنت خارج النطاق الجغرافي للموقع (تبعد {distance} م عن المنشأة، والحد المسموح {radius} م). يلزم التواجد في الموقع لتسجيل الحضور.",
+    "clocked_in": "تم تسجيل الحضور بنجاح. نتمنى لك وردية آمنة.",
+    "clocked_out": "تم تسجيل الانصراف بنجاح. شكراً لك.",
+    "location_ok": "تم تحديث موقعك، وأنت داخل النطاق الجغرافي للموقع.",
+    "breach_started": "تنبيه: أنت خارج النطاق الجغرافي للموقع، وتم إشعار مشرف الموقع.",
+    "still_outside": "ما زلت خارج النطاق الجغرافي للموقع."
+  },
+  "admin": {
+    "sla_run_complete": "اكتمل فحص غرامات اتفاقية مستوى الخدمة. عدد الغرامات المُسجّلة: {count}."
+  },
+  "validation": {
+    "missing": "حقل «{field}» مطلوب.",
+    "string_too_short": "يجب ألا يقل «{field}» عن {min_length} أحرف.",
+    "string_too_long": "يجب ألا يتجاوز «{field}» {max_length} حرفاً.",
+    "string_type": "يجب أن يكون «{field}» نصاً.",
+    "string_pattern_mismatch": "صيغة «{field}» غير صحيحة.",
+    "greater_than": "يجب أن يكون «{field}» أكبر من {gt}.",
+    "greater_than_equal": "يجب ألا يقل «{field}» عن {ge}.",
+    "less_than": "يجب أن يكون «{field}» أقل من {lt}.",
+    "less_than_equal": "يجب ألا يتجاوز «{field}» {le}.",
+    "int_parsing": "يجب أن يكون «{field}» عدداً صحيحاً.",
+    "int_type": "يجب أن يكون «{field}» عدداً صحيحاً.",
+    "int_from_float": "يجب أن يكون «{field}» عدداً صحيحاً.",
+    "float_parsing": "يجب أن يكون «{field}» رقماً.",
+    "float_type": "يجب أن يكون «{field}» رقماً.",
+    "decimal_parsing": "يجب أن يكون «{field}» رقماً عشرياً.",
+    "decimal_type": "يجب أن يكون «{field}» رقماً عشرياً.",
+    "decimal_max_digits": "يجب ألا يتجاوز «{field}» {max_digits} خانات.",
+    "decimal_max_places": "يجب ألا يتجاوز «{field}» {decimal_places} خانات عشرية.",
+    "bool_parsing": "قيمة «{field}» يجب أن تكون نعم أو لا.",
+    "bool_type": "قيمة «{field}» يجب أن تكون نعم أو لا.",
+    "value_error": "قيمة «{field}» غير صحيحة.",
+    "enum": "يجب أن تكون قيمة «{field}» إحدى القيم التالية: {expected}.",
+    "literal_error": "يجب أن تكون قيمة «{field}» إحدى القيم التالية: {expected}.",
+    "date_parsing": "يجب إدخال «{field}» بتاريخ صحيح (YYYY-MM-DD).",
+    "date_type": "يجب إدخال «{field}» بتاريخ صحيح (YYYY-MM-DD).",
+    "date_from_datetime_parsing": "يجب إدخال «{field}» بتاريخ صحيح (YYYY-MM-DD).",
+    "datetime_parsing": "يجب إدخال «{field}» بتاريخ ووقت صحيحين.",
+    "datetime_type": "يجب إدخال «{field}» بتاريخ ووقت صحيحين.",
+    "datetime_from_date_parsing": "يجب إدخال «{field}» بتاريخ ووقت صحيحين.",
+    "json_invalid": "محتوى الطلب ليس بصيغة JSON صحيحة.",
+    "dict_type": "يجب أن يكون «{field}» كائناً.",
+    "model_type": "يجب أن يكون «{field}» كائناً.",
+    "model_attributes_type": "يجب أن يكون «{field}» كائناً.",
+    "list_type": "يجب أن يكون «{field}» قائمة.",
+    "too_short": "يجب أن يحتوي «{field}» على {min_length} عنصر على الأقل.",
+    "too_long": "يجب ألا يحتوي «{field}» على أكثر من {max_length} عنصر.",
+    "extra_forbidden": "الحقل «{field}» غير مسموح به.",
+    "default": "قيمة «{field}» غير صحيحة."
+  },
+  "fields": {
+    "_self": "القيمة",
+    "email": "البريد الإلكتروني",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "full_name": "الاسم الكامل",
+    "full_name_ar": "الاسم الكامل بالعربية",
+    "phone": "رقم الجوال",
+    "preferred_locale": "اللغة المفضلة",
+    "role": "الدور",
+    "name": "الاسم",
+    "name_ar": "الاسم بالعربية",
+    "firm": "بيانات الشركة",
+    "facility": "بيانات المنشأة",
+    "moi_license_number": "رقم ترخيص وزارة الداخلية",
+    "license_expiry_date": "تاريخ انتهاء الترخيص",
+    "commercial_registration": "رقم السجل التجاري",
+    "headquarters_city_id": "مدينة المقر الرئيسي",
+    "operating_city_ids": "مدن التشغيل",
+    "contact_email": "البريد الإلكتروني للتواصل",
+    "contact_phone": "رقم التواصل",
+    "sector_id": "القطاع",
+    "city_id": "المدينة",
+    "address": "العنوان",
+    "latitude": "خط العرض",
+    "longitude": "خط الطول",
+    "geofence_radius_m": "نصف قطر النطاق الجغرافي",
+    "national_id": "رقم الهوية الوطنية / الإقامة",
+    "date_of_birth": "تاريخ الميلاد",
+    "guard_id": "حارس الأمن",
+    "title": "عنوان الطلب",
+    "description": "الوصف",
+    "guard_count": "عدد حراس الأمن",
+    "start_date": "تاريخ البدء",
+    "end_date": "تاريخ الانتهاء",
+    "daily_hours": "ساعات العمل اليومية",
+    "bidding_deadline": "الموعد النهائي لعروض الأسعار",
+    "budget_per_guard": "الميزانية لكل حارس",
+    "price_per_guard": "السعر لكل حارس",
+    "notes": "الملاحظات",
+    "reason": "السبب",
+    "sla_breach_threshold_minutes": "حد المخالفة (بالدقائق)",
+    "sla_penalty_per_breach": "الغرامة عن كل مخالفة",
+    "sla_max_penalty_percent": "الحد الأعلى لنسبة الغرامات",
+    "limit": "الحد",
+    "offset": "الإزاحة",
+    "status": "الحالة",
+    "firm_id": "شركة الحراسات",
+    "external_reference": "رقم العقد الحالي",
+    "contract_value": "قيمة العقد"
+  },
+  "enums": {
+    "firm_status": {
+      "pending": "بانتظار الاعتماد",
+      "approved": "معتمدة",
+      "rejected": "مرفوضة",
+      "suspended": "موقوفة"
+    },
+    "shamoos_status": {
+      "pending": "بانتظار التحقق",
+      "verified": "موثّق أمنياً",
+      "rejected": "مرفوض أمنياً"
+    },
+    "shamoos_result": {
+      "verified": "موثّق",
+      "rejected": "مرفوض",
+      "error": "تعذّر الاتصال"
+    },
+    "employment_status": {
+      "active": "على رأس العمل",
+      "on_leave": "في إجازة",
+      "terminated": "منتهية خدماته"
+    },
+    "bid_status": {
+      "submitted": "مُقدَّم",
+      "accepted": "تمت الترسية",
+      "rejected": "غير مقبول",
+      "withdrawn": "مسحوب"
+    },
+    "contract_status": {
+      "pending_firm_signature": "بانتظار توقيع شركة الحراسات",
+      "pending_facility_approval": "بانتظار اعتماد المنشأة",
+      "active": "ساري",
+      "completed": "منتهٍ",
+      "terminated": "مفسوخ"
+    },
+    "shift_status": {
+      "scheduled": "مجدولة",
+      "in_progress": "قيد التنفيذ",
+      "completed": "مكتملة",
+      "missed": "لم يُسجَّل الحضور",
+      "cancelled": "ملغاة"
+    },
+    "incident_severity": {
+      "low": "منخفضة",
+      "medium": "متوسطة",
+      "high": "عالية",
+      "critical": "حرجة"
+    },
+    "incident_status": {
+      "open": "مفتوح",
+      "under_review": "قيد المراجعة",
+      "resolved": "تمت المعالجة"
+    },
+    "invoice_status": {
+      "draft": "مسودة",
+      "issued": "صادرة",
+      "paid": "مسدّدة",
+      "overdue": "متأخرة السداد",
+      "cancelled": "ملغاة"
+    },
+    "penalty_status": {
+      "pending": "معلّقة",
+      "applied": "مُطبّقة",
+      "waived": "مُعفاة"
+    },
+    "service_health": {
+      "healthy": "مستقرة",
+      "degraded": "أداء منخفض",
+      "down": "متوقفة",
+      "idle": "لا توجد طلبات حديثة"
+    }
+  }
+}

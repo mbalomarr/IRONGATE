@@ -1,0 +1,20 @@
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.19
+
+# --- Database ---
+SQLAlchemy==2.0.36
+alembic==1.14.0
+PyMySQL==1.1.1
+cryptography==44.0.0  # required by PyMySQL for MySQL 8 caching_sha2_password auth
+
+# --- Validation & settings ---
+pydantic==2.10.3
+pydantic-settings==2.7.0
+email-validator==2.2.0
+python-dotenv==1.0.1
+
+# --- Security ---
+PyJWT==2.10.1
+bcrypt==4.2.1
